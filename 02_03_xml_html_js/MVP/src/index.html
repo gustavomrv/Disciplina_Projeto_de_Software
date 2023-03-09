@@ -1,23 +1,18 @@
 <!DOCTYPE html>
 <html>
-<style>
-table,th,td {
-  border : 1px solid black;
-  border-collapse: collapse;
-}
-th,td {
-  padding: 5px;
-}
-</style>
+
+<head>
+  <title>MVP - Questions</title>
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+
 <body>
+  <h1>Model-View-Presenter - Questions</h1>
+  <button type="button" onclick="requestShowQuestions()">Show me the questions bro</button>
+  <br><br>
 
-<h1>MVP - Questions</h1>
+  <div id="demo"></div>
 
-<button type="button" onclick="requestShowQuestions()">Show me the questions bro</button>
-<br><br>
-
-<div id="demo"></div>
-
-<script src="./codes.js"></script>
+  <script src="./codes.js"></script>
 </body>
 </html>

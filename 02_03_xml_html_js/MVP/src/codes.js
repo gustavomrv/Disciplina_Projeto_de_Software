@@ -9,6 +9,17 @@ function requestShowQuestions() {
   xhttp.send();
 }
   
+function requestSendAnswers() {
+  var xhttp2 = new XMLHttpRequest();
+  xhttp2.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      sendAnswers(this);
+    }
+  };
+  xhttp2.open("GET", "gabarito.xml", true);
+  xhttp2.send();
+}
+
 function showQuestions(xml) {
   var i, ex;
   var xmlDoc = xml.responseXML;
@@ -25,31 +36,20 @@ function showQuestions(xml) {
             questions[i].getElementsByTagName("enunciado")[0].childNodes[0].nodeValue +
           "</td>" +
         "</tr>";
-        for (ex = 1; ex < 6; ex++) {
-          div +=
-          "<tr>" +
-            "<td>" +
-              `<input type='radio' name='resposta${(i+1)}' id='resposta${(i+1)}${ex}' value=`+(ex)+"></input><label>" +
-              questions[i].getElementsByTagName(`resposta${ex}`)[0].childNodes[0].nodeValue +
-              "</label>" +
-            "</td>" +
-          "</tr>";
-        }
+      for (ex = 1; ex < 6; ex++) {
+        div +=
+        "<tr>" +
+          "<td>" +
+            `<input type='radio' name='resposta${(i+1)}' id='resposta${(i+1)}${ex}' value=`+(ex)+"></input><label>" +
+            questions[i].getElementsByTagName(`resposta${ex}`)[0].childNodes[0].nodeValue +
+            "</label>" +
+          "</td>" +
+        "</tr>";
+      }
       div += "</table>";
   }
   div += "</post> <button onclick='requestSendAnswers()'>Send Answers</button>"; 
   document.getElementById("demo").innerHTML = div;
-}
-
-function requestSendAnswers() {
-  var xhttp2 = new XMLHttpRequest();
-  xhttp2.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      sendAnswers(this);
-    }
-  };
-  xhttp2.open("GET", "gabarito.xml", true);
-  xhttp2.send();
 }
 
 function sendAnswers(xml) {
@@ -59,10 +59,10 @@ function sendAnswers(xml) {
   var contCorrects = 0;
   for (i = 0; i < 10; i++) { 
     correctAnswer = answers[0].getElementsByTagName(`resposta${(i+1)}`)[0].childNodes[0].nodeValue
-    var radios = document.getElementsByName(`resposta${(i+1)}`);
+    var userAnswer = document.getElementsByName(`resposta${(i+1)}`);
     for (var j = 0; j < 5; j++) {
-      if (radios[j].checked) {
-        if (makeshiftSolution(radios[j].value) == correctAnswer) {
+      if (userAnswer[j].checked) {
+        if (makeshiftSolution(userAnswer[j].value) == correctAnswer) {
           contCorrects += 1;
         }        
       }
