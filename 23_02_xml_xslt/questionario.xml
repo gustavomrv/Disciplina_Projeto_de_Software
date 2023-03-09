@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="questionario.xslt"?>
+<questionario>
+  <questao cod="1">
+    <enunciado>Qual é a função do Model-view-presenter (MVP)?</enunciado>
+    <resposta11 L="A">A) Gerenciar a lógica de apresentação e de interação do usuário</resposta11>
+    <resposta12 L="B">B) Gerenciar a lógica de negócios e de interação do usuário</resposta12>
+    <resposta13 L="C">C) Gerenciar a lógica de apresentação e de acesso aos dados</resposta13>
+    <resposta14 L="D">D) Gerenciar a lógica de negócios e de acesso aos dados</resposta14>
+    <resposta15 L="E">E) Gerenciar a lógica de apresentação, negócios e acesso aos dados</resposta15>     
+  </questao>
+  <questao2 cod="2">
+    <enunciado>O que é o Model no MVP?</enunciado>
+    <resposta21 L="A">A) A camada responsável pela lógica de apresentação</resposta21>
+    <resposta22 L="B">B) A camada responsável pela lógica de negócios</resposta22>
+    <resposta23 L="C">C) A camada responsável pelo acesso aos dados</resposta23>
+    <resposta24 L="D">D) A camada responsável pela interação do usuário</resposta24>
+    <resposta25 L="E">E) A camada responsável pela integração com outros sistemas</resposta25>     
+  </questao2>   
+  <questao3 cod="3">
+    <enunciado>O que é o View no MVP?</enunciado>
+    <resposta31 L="A">A) A camada responsável pela lógica de apresentação</resposta31>
+    <resposta32 L="B">B) A camada responsável pela lógica de negócios</resposta32>
+    <resposta33 L="C">C) A camada responsável pelo acesso aos dados</resposta33>
+    <resposta34 L="D">D) A camada responsável pela interação do usuário</resposta34>
+    <resposta35 L="E">E) A camada responsável pela integração com outros sistemas</resposta35>     
+  </questao3> 
+  <questao4 cod="4">
+    <enunciado>O que é o Presenter no MVP?</enunciado>
+    <resposta41 L="A">A) A camada responsável pela lógica de apresentação</resposta41>
+    <resposta42 L="B">B) A camada responsável pela lógica de negócios</resposta42>
+    <resposta43 L="C">C) A camada responsável pelo acesso aos dados</resposta43>
+    <resposta44 L="D">D) A camada responsável pela interação do usuário</resposta44>
+    <resposta45 L="E">E) A camada responsável pela integração com outros sistemas</resposta45>     
+  </questao4> 
+  <questao5 cod="5">
+    <enunciado>Qual é a principal vantagem do MVP em relação ao modelo MVC (Model-view-controller)?</enunciado>
+    <resposta51 L="A">A) Maior facilidade de testabilidade</resposta51>
+    <resposta52 L="B">B) Maior facilidade de implementação</resposta52>
+    <resposta53 L="C">C) Maior facilidade de manutenção</resposta53>
+    <resposta54 L="D">D) Maior facilidade de integração com outros sistemas</resposta54>
+    <resposta55 L="E">E) Maior facilidade de escalabilidade</resposta55>     
+  </questao5> 
+  <questao6 cod="6">
+    <enunciado>Em que consiste a separação de responsabilidades no MVP?</enunciado>
+    <resposta61 L="A">A) O Model é responsável pela lógica de negócios, o View é responsável pela lógica de apresentação e o Presenter é responsável pela interação do usuário</resposta61>
+    <resposta62 L="B">B) O Model é responsável pela lógica de apresentação, o View é responsável pela lógica de negócios e o Presenter é responsável pela interação do usuário</resposta62>
+    <resposta63 L="C">C) O Model é responsável pelo acesso aos dados, o View é responsável pela lógica de apresentação e o Presenter é responsável pela lógica de negócios</resposta63>
+    <resposta64 L="D">D) O Model é responsável pela lógica de negócios, o View é responsável pela interação do usuário e o Presenter é responsável pela lógica de apresentação</resposta64>
+    <resposta65 L="E">E) O Model é responsável pela lógica de acesso aos dados, o View é responsável pela lógica de apresentação e o Presenter é responsável pela lógica de negócios</resposta65>     
+  </questao6> 
+  <questao7 cod="7">
+    <enunciado>Qual é a função do Presenter no padrão de projeto Model-View-Presenter?</enunciado>
+    <resposta71 L="A">A) Gerenciar a interface do usuário e manipular os dados</resposta71>
+    <resposta72 L="B">B) Fornecer uma camada de abstração para o acesso aos dados do modelo</resposta72>
+    <resposta73 L="C">C) Atuar como um intermediário entre o modelo e a visão, gerenciando a lógica de negócio</resposta73>
+    <resposta74 L="D">D) Representar o estado atual da aplicação</resposta74>
+    <resposta75 L="E">E) Gerenciar a conexão com serviços externos</resposta75>     
+  </questao7> 
+  <questao8 cod="8">
+    <enunciado>Qual é a principal diferença entre o padrão Model-View-Controller (MVC) e o Model-View-Presenter (MVP)?</enunciado>
+    <resposta81 L="A">A) No padrão MVC, a visão é responsável por gerenciar a lógica de apresentação, enquanto no padrão MVP, essa responsabilidade fica com o Presenter</resposta81>
+    <resposta82 L="B">B) No padrão MVC, o modelo é responsável por gerenciar a lógica de negócio, enquanto no padrão MVP, essa responsabilidade fica com o Presenter</resposta82>
+    <resposta83 L="C">C) No padrão MVC, o Controller atua como intermediário entre a visão e o modelo, enquanto no padrão MVP, essa responsabilidade fica com o Presenter</resposta83>
+    <resposta84 L="D">D) No padrão MVC, a visão e o modelo se comunicam diretamente, enquanto no padrão MVP, a comunicação entre eles é intermediada pelo Presenter</resposta84>
+    <resposta85 L="E">E) No padrão MVC, o modelo é responsável por gerenciar o acesso aos dados, enquanto no padrão MVP, essa responsabilidade fica com a visão</resposta85>     
+  </questao8> 
+  <questao9 cod="9">
+    <enunciado>Uma das principais vantagens do padrão de projeto Model-View-Presenter é a sua capacidade de tornar a aplicação mais modular e facilmente testável.</enunciado>
+    <resposta91 L="A">A) Verdadeiro</resposta91>
+    <resposta92 L="B">B) Falso</resposta92>
+    <resposta93 L="C">C) Depende do tipo de aplicação</resposta93>
+    <resposta94 L="D">D) Depende do tipo de plataforma</resposta94>
+    <resposta95 L="E">E) Depende da implementação específica</resposta95>     
+  </questao9> 
+   <questao10 cod="10">
+    <enunciado>Qual foi a primeira linguagem de programação a utilizar o padrão de projeto Model-View-Presenter?</enunciado>
+    <resposta101 L="A">A) Java</resposta101>
+    <resposta102 L="B">B) C++</resposta102>
+    <resposta103 L="C">C) C#</resposta103>
+    <resposta104 L="D">D) Smalltalk</resposta104>
+    <resposta105 L="E">E) Python</resposta105>     
+  </questao10> 
+</questionario>
