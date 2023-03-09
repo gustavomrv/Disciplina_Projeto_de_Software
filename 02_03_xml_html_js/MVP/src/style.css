@@ -1,7 +1,100 @@
-table,th,td {
-    border : 1px solid black;
-    border-collapse: collapse;
+.btn {
+    align-items: center;
+    display: block; /* tornar o botão um elemento de bloco */
+    width: 300px; /* largura do botão */
+    height: 60px; /* altura do botão */
+    background-color: #0080ff; /* cor de fundo */
+    color: #fff; /* cor do texto */
+    border: none; /* remover borda */
+    border-radius: 30px; /* borda arredondada */
+    font-size: 24px; /* tamanho da fonte */
+    font-weight: bold; /* negrito */
+    text-align: center; /* centralizar texto */
+    text-decoration: none; /* remover sublinhado */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); /* sombra do texto */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* sombra do botão */
+    cursor: pointer; /* mãozinha ao passar o mouse */
+    transition: background-color 0.3s ease; /* transição suave de cor ao passar o mouse */
+  }
+  
+  .btn:hover {
+    background-color: #005cbf; /* cor de fundo ao passar o mouse */
+  }
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 10vh; /* altura da tela */
+  }
+  
+
+.card {
+    border: 1px solid #000000;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
-th,td {
+  
+.question {
+font-weight: bold;
+margin-top: 15px;
+margin-bottom: 15px;
+}
+
+.options {
+flex-wrap: wrap;
+align-items: center;
+}
+
+.option {
+margin-right: 10px;
+margin-bottom: 10px;
+width: 100%;
+max-width: 1500px;
+cursor: pointer;
+transition: background-color 0.3s ease-in-out;
+}
+
+.option label {
+background-color: #f5f5f5;
+border: 1px solid #ccc;
+border-radius: 3px;
 padding: 5px;
+display: block;
 }
+
+.option label:hover {
+background-color: #eee;
+}
+
+.option input[type="radio"] {
+display: none;
+}
+
+.option input[type="radio"]:checked + label {
+background-color: #0074f8;
+color: #fff;
+}
+
+.card-header {
+background-color: #d7ffc1;
+border-bottom: 1px solid #ccc;
+font-weight: bold;
+padding: 10px;
+text-align: center;
+}
+
+.card-body {
+    background-color: #fffef0;
+}
+
+h1 {
+    font-size: 48px; /* tamanho da fonte */
+    font-weight: bold; /* negrito */
+    text-align: center; /* centralizar */
+    color: #333; /* cor do texto */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* sombra */
+    letter-spacing: 2px; /* espaçamento entre as letras */
+    margin-bottom: 20px; /* margem inferior */
+}
+  
