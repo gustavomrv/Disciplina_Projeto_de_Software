@@ -16,7 +16,7 @@ function requestSendAnswers() {
       sendAnswers(this);
     }
   };
-  xhttp2.open("GET", "gabarito.xml", true);
+  xhttp2.open("GET", "answers.xml", true);
   xhttp2.send();
 }
   

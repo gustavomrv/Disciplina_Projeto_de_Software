@@ -27,12 +27,12 @@
     height: 10vh; /* altura da tela */
   }
   
-
 .card {
     border: 1px solid #000000;
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 20px;
+    background-color: #fffef0;
 }
   
 .question {
